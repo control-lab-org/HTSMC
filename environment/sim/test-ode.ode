@@ -1,0 +1,25 @@
+# System ode definition 
+x1'=(a*x1)+u  
+
+
+# Ctrl law
+e=xd - x1
+
+#u=(kp * e)
+u=kp*(tanh (e))
+
+
+# System Parameters
+param xd=5
+param a=2
+param kp=1
+# Initial Conds
+x1(0)=0.1
+
+# Time series output
+aux ref=xd
+aux out=x1
+aux error=e
+aux ctrl=u
+
+done

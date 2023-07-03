@@ -1,0 +1,15 @@
+To run the scrip is need to be installed:
+ * racket
+ * xppaut
+
+To and to generate the plot files: 
+ * gnuplot
+
+
+All the code was tested under
+
+* racket: Racket v8.6 [cs].
+* xppaut: XPPAUT 6.11 Copyright (C) 2002-2011  Bard Ermentrout.
+* Gnuplot: gnuplot 5.4 patchlevel 2.
+
+

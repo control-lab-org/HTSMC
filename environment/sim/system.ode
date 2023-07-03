@@ -1,0 +1,21 @@
+# System ode definition 
+x1'=((a * x1) + (b * u))
+# Error
+e=1.0-(x1)
+# Ctrl law
+u=(5 * e)
+# System Parameters
+param a=2.0
+param b=1.0
+# Initial Conds
+x1(0)=0.0
+# Time Series Outputs:
+# (t,x0,...,xn,ref,y,e,u)
+aux ref=1.0
+aux output=(x1)
+aux error=e
+@ bounds=1000
+@ T0= 0.0
+@ total=2.0
+@ DT=0.001
+done
